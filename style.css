@@ -1,0 +1,87 @@
+ body {
+      margin: 0;
+      overflow: scroll;
+    }
+.img1{
+    width: 100%;
+    height: 500px;
+    opacity: 0.8;
+     cursor: pointer; 
+}
+.img1:hover{
+  opacity:1;
+ box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+}
+h1{
+ 
+font-style: italic;
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 80px;
+   
+   
+    
+
+}
+.img2{
+    width:400px;
+    height:300px;
+    border-radius: 50% 80% /70% 10%;
+    margin-left: 20px;
+ 
+     cursor: pointer; 
+  }
+.img2:hover{
+     width:400px;
+    height:300px;
+      border-radius: 30% 30% / 30% 30%;
+     box-shadow: rgba(0, 0, 0, 0.3) 40px  20px 30px;
+    
+    
+}
+ #scrolling-image {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top:100px;
+      transform: translateX(-100%);
+      animation: scrollImage 1s ease-in-out forwards;
+    }
+
+    @keyframes scrollImage {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+.paragraph{
+    font-size: 1.3em;
+   font-family: cursive;
+    margin-top:120px;
+    margin-left: 40px;
+     text-align: justify;
+    
+}
+    #scrolling-paragraph {
+        margin-top: 200px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateX(100%);
+      animation: scrollParagraph 2s ease-in-out forwards;
+    }
+
+    @keyframes scrollParagraph {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+
